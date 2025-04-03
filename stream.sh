@@ -13,7 +13,7 @@ get_youtube_stream_key() {
         -H "Content-Type: application/json" \
         -d '{
           "snippet": {
-            "title": "CCTV Live Stream",
+            "title": "CCTV Live Stream - '$(date +"%Y-%m-%d %H:%M:%S")'",
             "scheduledStartTime": "'$(date -u --iso-8601=seconds)'"
           },
           "status": {
